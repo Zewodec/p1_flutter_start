@@ -32,7 +32,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String _name = "";
 
-  void _incrementCounter() {
+  void _setFullName() {
     setState(() {
       Student student = Student("Adam", "Ivaniush");
       _name = student.fullName;
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _setFullName,
         tooltip: 'Set full name',
         child: const Icon(Icons.add),
       ),
